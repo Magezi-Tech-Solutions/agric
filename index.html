@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
 </head>
 
 <body>
@@ -22,18 +23,19 @@
                <button class="navbar-toggler burger-nav" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <i class="fas fa-bars"></i> </button>
                <div class="collapse navbar-collapse" id="navbarSupportedContent">
                   <ul class="navbar-nav mr-auto">
-                
+                 
+					
 					 <li class="nav-item"> <a class="nav-link" href="index.html">Home</a> </li>
-                     <li class="nav-item"> <a class="nav-link" href="about.html">About</a> </li>
-					  <li class="nav-item"> <a class="nav-link" href="blog.html">News</a> </li>
-					  <li class="nav-item"> <a class="nav-link" href="contact.html">Contact</a> </li>
+                     <li class="nav-item"> <a class="nav-link" href="index.html#about" onclick="$('#about').animatescroll({scrollSpeed:2000,easing:'easeInOutBack'});">About</a> </li>
+					  <li class="nav-item"> <a class="nav-link" href="index.html#news" onclick="$('#news').animatescroll({scrollSpeed:2000,easing:'easeInOutBack'});">News</a> </li>
+					  <li class="nav-item"> <a class="nav-link" href="index.html#contact" onclick="$('#contact').animatescroll({scrollSpeed:2000,easing:'easeInOutBack'});">Contact</a> </li>
              
                   </ul>
                   <ul class="topnav-right">
                
                      <li> <a class="search-icon" href="#search"> <i class="fas fa-search"></i> </a> </li>
                      
-                     <li class="login-reg"> <a href="my-account.html">Login</a> | <a href="log.html">Signup</a> </li>
+                     <li class="login-reg"> <a href="log.html">Login</a> | <a href="reg.html">Signup</a> </li>
                   </ul>
                </div>
             </nav>
@@ -125,7 +127,7 @@
 	
 	
 <!--Start of About section-->
-	    <section class="wf100 about">
+	    <section class="wf100 about" id="about">
             <!--About Txt Video Start-->
             <div class="about-video-section wf100">
                <div class="container">
@@ -137,11 +139,12 @@
                            <h2>Farmers Produce Better Production</h2>
                            <p><strong>Agric Solutions is an online platform where we help farmers on their farm production by providing many services such as farm equipments,skill personell to educate farmers on their farm produce, e-commerce platform where farmers can sell their farm products online and market, and much more. </strong></p>
                          
-                           <a href="about.html">Learn More</a> 
+                           <a href="about.html">contact us</a> 
                         </div>
                      </div>
                      <div class="col-lg-6">
-                        <div class="about-video-img"> <a href="#"><i class="fas fa-play"></i></a> <img src="img/banner-grid-01.jpg" alt=""> </div>
+					
+                        <div class="about-video-img"> <a href="img/about.mp4" data-fancybox="about" data-caption="ABOUT US"><i class="fas fa-play"></i></a> <img src="img/banner-grid-01.jpg" class="img-fluid" alt=""> </div>
                      </div>
                   </div>
                </div>
@@ -385,7 +388,7 @@
 		 
 		 
 <!--		start of latest news -->
-		   <section class=" mt-5 ">
+		   <section class=" mt-5 " id="news">
             <div class="container">
                <div class="row">
                   <div class="col-md-6">
@@ -399,37 +402,43 @@
                <div class="row section-news py-3">
                   <div class="col-md-6">
                      <div class="blog-post-large">
+						 <a href="news.html">
                         <div class="post-thumb">  <img class="img-fluid" src="img/products%20(2).jpeg" alt=""></div>
                         <div class="post-txt">
                            <ul class="post-meta">
                               <li><i class="fas fa-calendar-alt"></i> 2 October, 2021</li>
                               
                            </ul>
-                           <h5><a href="#">Planting Fruitd for Better Production</a></h5>
+                           <h5><a href="news.html">Planting Fruitd for Better Production</a></h5>
                         </div>
+						 </a>
                      </div>
                   </div>
                   <div class="col-md-6">
                      <!--Blog Small Post Start-->
                      <div class="blog-small-post">
+						 <a href="news.html">
                         <div class="post-thumb">  <img src="img/products%20(1).jpg" class="img-fluid" alt=""> </div>
                         <div class="post-txt">
                            <span class="pdate"> <i class="fas fa-calendar-alt"></i> 29 September, 2021</span>
-                           <h5><a href="#">How you can grow large production.</a></h5>
+                           <h5><a href="news.html">How you can grow large production.</a></h5>
                            <p>According to a survey the perceived higher cost of farm production...</p>
-                           <a href="#" class="rm">Read More</a> 
+                           <a href="news.html" class="rm">Read More</a> 
                         </div>
+						 </a>
                      </div>
                      <!--Blog Small Post End--> 
                      <!--Blog Small Post Start-->
                      <div class="blog-small-post">
+						 <a href="news.html">
                         <div class="post-thumb">  <img class="img-fluid" src="img/tomato.jpeg" alt=""> </div>
                         <div class="post-txt">
                            <span class="pdate"> <i class="fas fa-calendar-alt"></i> 24 September, 2021</span>
-                           <h5><a href="#">The effort of planting green healthy tomato</a></h5>
+                           <h5><a href="news.html">The effort of planting green healthy tomato</a></h5>
                            <p>This year we have new and advance technology for growing healthy tomatoes and keeping them away from being attack by pests..</p>
-                           <a href="#" class="rm">Read More</a> 
+                           <a href="news.html" class="rm">Read More</a> 
                         </div>
+						 </a>
                      </div>
                      <!--Blog Small Post End--> 
                   </div>
@@ -459,7 +468,12 @@
                </div>
             </div>
 <!--	partner logos	 -->
+<!--start of Map-->
+
+	
+         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127357.68503455872!2d39.59622238325311!3d-4.035185744938914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x184012e78ec02c7d%3A0xcb618bbc35d0db5a!2sMombasa!5e0!3m2!1sen!2ske!4v1572890860211!5m2!1sen!2ske" width="100%" height="400px" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
 		 
+<!--end of Map-->
 		 
 	    <!--    GET IN TOUCH-->
     <div class="container" id="contact">
@@ -491,6 +505,7 @@
     
     
 <!--    FOOTER-->
+		 
     
  <footer class="p-2 mt-4" >
      <div class="container-fluid">
@@ -543,6 +558,9 @@
 	<script src="js/bootstrap.bundle.min.js"></script>
 	<script src="js/all.js"></script>
 	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.fancybox.min.js"></script>
+	<script src="js/animate-scroll.js"></script>
+	<script src="js/animatescroll.min.js"></script>
 	<script src="script.js"></script>
 </body>
 </html>
