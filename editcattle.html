@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+    <title>Agric Dashboard </title>
+    <link rel="icon" type="image/png" href="assets/img/logo.jpg"/>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/dashboard.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body>
+
+    <!--  Main Container Starts  -->
+    <div class="main-container" id="container">
+        <div class="overlay"></div>
+        <!--  Sidebar Starts  -->
+        <div class="sidebar-wrapper sidebar-theme">
+            <nav id="sidebar">
+                <div class="d-flex flex-row align-center justify-content-center logo-area">
+                    <a href="dashboard.html">
+                        <img src="assets/img/logo.jpg" class="navbar-logo" alt="logo">
+                    </a>
+                    <a href="dashboard.html" class="nav-link"> Agric </a>
+                </div>
+                <ul class="list-unstyled menu-categories" id="accordionExample">
+                        <li class="menu ">
+                        <a href="index.html"  class="main-item dropdown-toggle text-center">
+                            <i class="fas fa-home"></i>
+							<p class="text-white">Home</p>
+                        </a>
+                    </li>
+                    <li class="menu ">
+                        <a href="dashboard.html"  class="main-item text-center dropdown-toggle ">
+                            <i class="fas fa-tachometer-alt"></i>
+							<p class="text-white">Dashboard</p>
+                        </a>
+                    </li>
+                    <li class="menu active">
+                        <a href="cattle.html" data-active="true" class="text-center main-item dropdown-toggle ">
+                            <span class="new-notification"></span>
+                            <i class="fas fa-hippo"></i>
+							<p class="text-white">Records</p>
+                        </a>
+                    </li>
+          
+                    <li class="menu">
+                        <a href="#" class="text-center main-item dropdown-toggle ">
+                            <i class="fas fa-chart-line"></i>
+							<p class="text-white">AgriPools</p>
+                        </a>
+                    </li>
+                    <li class="menu">
+                        <a href="contact.html" class="main-item dropdown-toggle ">
+                            <i class="fas fa-phone"></i>
+							<p class="text-white">contact</p>
+                        </a>
+                    </li>
+             
+                </ul>
+            </nav>
+        </div>
+    
+        <!--  Content Area Starts  -->
+        <div id="content" class="main-content">
+            <!--  Navbar Starts  -->
+            <div class="header-container fixed-top">
+                <header class="header navbar navbar-expand-sm">
+                  <a href="javascript:void(0);" class="sidebarCollapse my-3 ml-5" data-placement="bottom">
+                        <i class="fas fa-bars"></i>
+                    </a>
+                    <ul class="navbar-item flex-row ml-md-auto">
+                        <li class="nav-item dropdown notification-dropdown">
+                            <a href="javascript:void(0);" class="nav-link dropdown-toggle position-relative" id="notificationDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-bell"></i>
+                                <div class="blink">
+                                    <div class="circle"></div>
+                                </div>
+                            </a>
+                            <div class="dropdown-menu position-absolute" aria-labelledby="notificationDropdown">
+                                <div class="nav-drop is-notification-dropdown" >
+                                    <div class="inner">
+                                        <div class="nav-drop-header">
+                                            <span class="text-black font-12 strong">5 Notifications</span>
+                                            <a class="text-muted font-12" href="#">
+                                                Clear All
+                                            </a>
+                                        </div>
+                                        <div class="nav-drop-body account-items pb-0">
+                                            <a class="account-item" href="javascript:void(0);">
+                                            <div class="media align-center">
+                                                <div class="icon-wrap">
+                                                    <i class="fas fa-box font-20"></i>
+                                                </div>
+                                                <div class="media-content ml-3">
+                                                    <h6 class="font-13 mb-0 strong">2 New orders placed</h6>
+                                                    <p class="m-0 mt-1 font-10 text-muted">10 sec ago</p>
+                                                </div>
+                                            </div>
+                                            </a>
+                                           
+                                     
+                                    
+                                            <hr class="account-divider">
+                                            <div class="text-center">
+                                                <a class="text-primary strong font-13" href="#">View All</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown user-profile-dropdown">
+                            <a href="profile.html" class="nav-link dropdown-toggle user" id="userProfileDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                <img src="assets/img/magezi.png" alt="avatar">
+                            </a>
+                            <div class="dropdown-menu position-absolute" aria-labelledby="userProfileDropdown">
+                                <div class="nav-drop is-account-dropdown" >
+                                    <div class="inner">
+                                        <div class="nav-drop-header">
+                                            <span class="text-primary font-15">Welcome Admin !</span>
+                                        </div>
+                                        <div class="nav-drop-body account-items pb-0">
+                                            <a id="profile-link"  class="account-item" href="#">
+                                                <div class="media align-center">
+                                                    <div class="media-left">
+                                                        <div class="image">
+                                                            <img class="rounded-circle avatar-xs" src="assets/img/magezi.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="media-content ml-3">
+                                                        <h6 class="font-13 mb-0 strong">Calvin</h6>
+                                                        <small>Magezi</small>
+                                                    </div>
+                                                    <div class="media-right">
+                                                        <i data-feather="check"></i>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                    
+                                      
+                                     
+                                            <hr class="account-divider">
+                                            <a class="account-item" href="#">
+                                                <div class="media align-center">
+                                                    <div class="icon-wrap">
+                                                        <i class="fas fa-sign-out-alt font-20"></i>
+                                                    </div>
+                                                    <div class="media-content ml-3">
+                                                        <h6 class="font-13 mb-0 strong ">Logout</h6>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+          
+                </header>
+            </div>
+            <!--  Navbar Ends  -->
+            <!--  Navbar Starts / Breadcrumb Area  -->
+            <div class="sub-header-container">
+                <header class="header navbar navbar-expand-sm">
+                 
+                    <ul class="navbar-nav flex-row">
+                        <li>
+                            <div class="page-header">
+                                <nav class="breadcrumb-one" aria-label="breadcrumb">
+                                    <ol class="breadcrumb">
+                                        <li class="breadcrumb-item"><a href="javascript:void(0);">Edit Cow</a></li>
+                                       
+                                    </ol>
+                                </nav>
+                            </div>
+                        </li>
+                    </ul>
+      
+                </header>
+            </div>
+            <!--  Navbar Ends / Breadcrumb Area  -->
+            <!-- start of main body -->
+            <div class="layout-px-spacing">
+
+			     <div class="row">
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 layout-spacing">
+                        <div class="statbox widget box box-shadow">
+                            <div class="widget-header">
+                                <div class="row">
+                                    <div class="col-xl-12 col-md-12 col-sm-12 col-12">
+                                        <h4>Edit Cow </h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="widget-content widget-content-area add-manage-product-2">
+                                <div class="row">
+                                    <div class="col-xl-7 col-md-12">
+                                        <div class="card card-default">
+                                            <div class="card-heading"><h2 class="card-title"><span>General</span></h2></div>
+                                            <div class="card-body">
+                                                <div class="card-body">
+                                                    <form class="form-horizontal">
+                                                        <div class="form-group mb-4">
+                                                            <div class="row">
+                                                                <label class="col-md-4">Name :</label>
+                                                                <div class="col-md-8">
+                                                                    <input class="form-control" name="name" type="text" value="Holstein Friesians">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group mb-4">
+                                                            <div class="row">
+                                                                <label class="col-md-4">Description :</label>
+                                                                <div class="col-md-8">
+                                                                    <textarea rows="4" cols="5" name="description" class="form-control" >Holstein Friesians are a breed of dairy cattle originating from the Dutch provinces of North Holland and Friesland, and Schleswig-Holstein in Northern Germany. They are known as the world's highest-production dairy animals.</textarea>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                            
+                                                        <div class="form-group mb-4">
+                                                            <div class="row">
+                                                                <label class="col-md-4">Gender :</label>
+                                                                <div class="col-md-8">
+                                                                    <select class="form-control form-custom mb-4" name="category">
+                                                                    <option value="category2">Female</option>
+                                                                        <option value="category1">Male</option>
+                                                                        
+                                                                    
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                      
+                                                        <div class="form-group mb-4">
+                                                            <div class="row">
+                                                                <label class="col-md-4">Color :</label>
+                                                                <div class="col-md-8">
+                                                                    <select class="form-control form-custom" name="color">
+                                                                        <option value="color2">Black &amp; White</option>
+                                                                        <option value="color1">Black</option>
+                                                                        <option value="color2">White</option>
+                                                                     
+                                                                        <option value="color3">Brown</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                              
+                                                        <div class="form-group mb-4">
+                                                            <div class="row">
+                                                                <label class="col-md-4">Weight :</label>
+                                                                <div class="col-md-8">
+                                                                    <input class="form-control" name="weight" type="text" value="580 kg">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                          <div class="form-group mb-4">
+                                                            <div class="row">
+                                                                <label class="col-md-4">Health</label>
+                                                                <div class="col-md-8">
+                                                                    <select class="form-control form-custom" name="health">
+                                                                        
+                                                                        <option value="">good</option>
+                                                                        <option value="">better</option>
+                                                                     
+                                                                        <option value="">Not good</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                              
+                                             
+                                                        <div class="form-group cutom-autocomplete mb-4">
+                                                            <div class="row">
+                                                                <label class="col-md-4">Country :</label>
+                                                                <div class="col-md-8">
+                                                                    <input id="autocomplete" class="ui-corner-all form-control" value="Uganda">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+														          <div class="form-group mb-4">
+                                                            <div class="row">
+                                                                <label class="col-md-4">Performance :</label>
+                                                                <div class="col-md-8">
+                                                                    <select class="form-control form-custom" name="perform">
+                                                                        
+                                                                        <option value="">excellence</option>
+                                                                        <option value="">Average</option>
+                                                                     
+                                                                        <option value="">Poor</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                              
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-xl-5 col-md-12">
+                                        <div class="card card-default my-3">
+                                            <div class="card-heading"><h2 class="card-title"><span>Photos</span></h2></div>
+                                            <div class="card-body">
+                                                <form class="form-horizontal">
+                                               <div class="form-group">
+                                                        <div class="row">
+                                                            <label class="col-md-12"><span>Image</span></label>
+															<div class="col-6 mx-auto my-3">
+																<img src="assets/img/friesiancow.jpg" class="img-fluid">
+															</div>
+<!--															end of col-->
+																<div class="col-6 mx-auto my-3">
+																<img src="assets/img/friesiancow4.jpg" class="img-fluid">	
+															</div>
+<!--															end of col-->
+													<div class="col-6 mx-auto my-3">
+																<img src="assets/img/friesiancow3.jpg" class="img-fluid">	
+															</div>
+<!--															end of col-->	
+													<div class="col-6 mx-auto my-3">
+																<img src="assets/img/friesiancow2.jpg" class="img-fluid">	
+															</div>
+<!--															end of col-->			
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div class="row">
+                                                            <label class="col-md-4">Image :</label>
+                                                            <div class="col-md-8">
+                                                                <div class="mb-3">
+                                                                    <div class="custom-file">
+                                                                        <input type="file" class="form-control-file" id="file-input">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                              </form>
+                                            </div>
+                                        </div>
+<!--										end of card-->
+										 <div class="card card-default my-3">
+                                            <div class="card-heading"><h2 class="card-title"><span>Breeding</span></h2></div>
+                                            <div class="card-body">
+                                                <form class="form-horizontal">
+                                               <div class="form-group">
+                                                          <div class="row">
+                                                                <label class="col-md-4">isBreeding :</label>
+                                                                <div class="col-md-8">
+                                                                    <select class="form-control form-custom" name="breed">
+                                                                    
+                                                                        <option value="yes">Yes</option>
+                                                                        <option value="no">No</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                    </div>
+                                            </form>
+                                            </div>
+                                        </div>
+<!--										end of card-->
+							 <div class="card card-default my-3">
+                                            <div class="card-heading"><h2 class="card-title"><span>Offspring</span></h2></div>
+                                            <div class="card-body">
+                                                <form class="form-horizontal">
+                                               <div class="form-group">
+                                                          <div class="row">
+                                                                <label class="col-md-4">No of offSprings :</label>
+                                                                <div class="col-md-8">
+                                                                    <select class="form-control form-custom" name="offspring">
+                                                                    
+                                                                        <option value="1">1</option>
+                                                                        <option value="2">2</option>
+																		 <option value="3">3</option>
+																		 <option value="4">4</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                    </div>
+                                            </form>
+                                            </div>
+                                        </div>
+<!--										end of card-->										                     <div class="card card-default my-3">
+                                            <div class="card-heading"><h2 class="card-title"><span>Pedigree chart</span></h2></div>
+                                            <div class="card-body">
+                                                <form class="form-horizontal">
+                                               <div class="form-group">
+                                                        <div class="row">
+                                                            <label class="col-md-12"><span>Upload a</span></label>
+															<div class="col-6 mx-auto my-3">
+																<img src="assets/img/ped.jpg" class="img-fluid">
+															</div>
+<!--															end of col-->
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div class="row">
+                                                            <label class="col-md-4">Pedigree chart :</label>
+                                                            <div class="col-md-8">
+                                                                <div class="mb-3">
+                                                                    <div class="custom-file">
+                                                                        <input type="file" class="form-control-file" id="file-input">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                              </form>
+                                            </div>
+                                        </div>
+<!--										end of card-->
+										
+                                    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+			<hr style="border-top: 3px solid #333;width:60%" class="mt-3">
+             <a href="#" style="text-decoration: none;"><button class="btn  btn-block btn-view mb-2 mt-5 btn-lg mb-4 text-center mx-auto w-md-50"> Save Changes &nbsp; <i class="fas fa-arrow-right"></i></button></a> 
+            <hr style="border-top: 3px solid #333;width:40%" class="ml-auto">  
+			
+			</div>
+            <!-- End of main body -->
+          
+            <!--  start of footer -->
+            <div class="footer-wrapper">
+                <div class="footer-section f-section-1">
+                    <p class="">Copyright © 2021. AGRIC SOLUTIONS, All rights reserved.</p>
+                </div>
+              
+            </div>
+<!--           end of footer-->
+            <div class="scroll-top-arrow" style="display: none;">
+                <i class="fas fa-angle-up"></i>
+            </div>
+            <!-- end of scrooll top -->
+        </div>
+        <!--  end of content area  -->
+
+    </div>
+<!--  end of elements-->
+    <script src="assets/js/jquery-3.1.1.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/all.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script>
+        $(document).ready(function() {
+            App.init();
+        });
+    </script>
+  
+</body>
+
+</html>

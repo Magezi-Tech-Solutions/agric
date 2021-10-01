@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+    <title>Shop </title>
+    <link rel="icon" type="image/png" href="assets/img/logo.jpg"/>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<link href="assets/css/jquery.fancybox.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/dashboard.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body>
+
+    <!--  Main Container Starts  -->
+    <div class="main-container" id="container">
+        <div class="overlay"></div>
+        <!--  Sidebar Starts  -->
+        <div class="sidebar-wrapper sidebar-theme">
+            <nav id="sidebar">
+                <div class="d-flex flex-row align-center justify-content-center logo-area">
+                    <a href="dashboard.html">
+                        <img src="assets/img/logo.jpg" class="navbar-logo" alt="logo">
+                    </a>
+                    <a href="dashboard.html" class="nav-link"> Agric </a>
+                </div>
+                <ul class="list-unstyled menu-categories" id="accordionExample">
+                       <li class="menu ">
+                        <a href="index.html"  class="main-item dropdown-toggle text-center">
+                            <i class="fas fa-home"></i>
+							<p class="text-white">Home</p>
+                        </a>
+                    </li>
+                    <li class="menu ">
+                        <a href="dashboard.html"  class="main-item text-center dropdown-toggle ">
+                            <i class="fas fa-tachometer-alt"></i>
+							<p class="text-white">Dashboard</p>
+                        </a>
+                    </li>
+                    <li class="menu active">
+                        <a href="cattle.html" data-active="true" class="text-center main-item dropdown-toggle ">
+                            <span class="new-notification"></span>
+                            <i class="fas fa-hippo"></i>
+							<p class="text-white">Records</p>
+                        </a>
+                    </li>
+          
+                    <li class="menu">
+                        <a href="#" class="text-center main-item dropdown-toggle ">
+                            <i class="fas fa-chart-line"></i>
+							<p class="text-white">AgriPools</p>
+                        </a>
+                    </li>
+                    <li class="menu">
+                        <a href="contact.html" class="main-item dropdown-toggle ">
+                            <i class="fas fa-phone"></i>
+							<p class="text-white">contact</p>
+                        </a>
+                    </li>
+             
+                </ul>
+            </nav>
+        </div>
+    
+        <!--  Content Area Starts  -->
+        <div id="content" class="main-content">
+            <!--  Navbar Starts  -->
+            <div class="header-container fixed-top">
+                <header class="header navbar navbar-expand-sm">
+                  <a href="javascript:void(0);" class="sidebarCollapse my-3 ml-5" data-placement="bottom">
+                        <i class="fas fa-bars"></i>
+                    </a>
+                    <ul class="navbar-item flex-row ml-md-auto">
+                        <li class="nav-item dropdown notification-dropdown">
+                            <a href="javascript:void(0);" class="nav-link dropdown-toggle position-relative" id="notificationDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-bell"></i>
+                                <div class="blink">
+                                    <div class="circle"></div>
+                                </div>
+                            </a>
+                            <div class="dropdown-menu position-absolute" aria-labelledby="notificationDropdown">
+                                <div class="nav-drop is-notification-dropdown" >
+                                    <div class="inner">
+                                        <div class="nav-drop-header">
+                                            <span class="text-black font-12 strong">5 Notifications</span>
+                                            <a class="text-muted font-12" href="#">
+                                                Clear All
+                                            </a>
+                                        </div>
+                                        <div class="nav-drop-body account-items pb-0">
+                                            <a class="account-item" href="javascript:void(0);">
+                                            <div class="media align-center">
+                                                <div class="icon-wrap">
+                                                    <i class="fas fa-box font-20"></i>
+                                                </div>
+                                                <div class="media-content ml-3">
+                                                    <h6 class="font-13 mb-0 strong">2 New orders placed</h6>
+                                                    <p class="m-0 mt-1 font-10 text-muted">10 sec ago</p>
+                                                </div>
+                                            </div>
+                                            </a>
+                                           
+                                     
+                                    
+                                            <hr class="account-divider">
+                                            <div class="text-center">
+                                                <a class="text-primary strong font-13" href="#">View All</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown user-profile-dropdown">
+                            <a href="javascript:void(0);" class="nav-link dropdown-toggle user" id="userProfileDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                <img src="assets/img/magezi.png" alt="avatar">
+                            </a>
+                            <div class="dropdown-menu position-absolute" aria-labelledby="userProfileDropdown">
+                                <div class="nav-drop is-account-dropdown" >
+                                    <div class="inner">
+                                        <div class="nav-drop-header">
+                                            <span class="text-primary font-15">Welcome Admin !</span>
+                                        </div>
+                                        <div class="nav-drop-body account-items pb-0">
+                                            <a id="profile-link"  class="account-item" href="profile.html">
+                                                <div class="media align-center">
+                                                    <div class="media-left">
+                                                        <div class="image">
+                                                            <img class="rounded-circle avatar-xs" src="assets/img/magezi.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="media-content ml-3">
+                                                        <h6 class="font-13 mb-0 strong">Calvin</h6>
+                                                        <small>Magezi</small>
+                                                    </div>
+                                                    <div class="media-right">
+                                                        <i data-feather="check"></i>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                    
+                                      
+                                     
+                                            <hr class="account-divider">
+                                            <a class="account-item" href="#">
+                                                <div class="media align-center">
+                                                    <div class="icon-wrap">
+                                                        <i class="fas fa-sign-out-alt font-20"></i>
+                                                    </div>
+                                                    <div class="media-content ml-3">
+                                                        <h6 class="font-13 mb-0 strong ">Logout</h6>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+          
+                </header>
+            </div>
+            <!--  Navbar Ends  -->
+            <!--  Navbar Starts / Breadcrumb Area  -->
+            <div class="sub-header-container">
+                <header class="header navbar navbar-expand-sm">
+                 
+                    <ul class="navbar-nav flex-row">
+                        <li>
+                            <div class="page-header">
+                                <nav class="breadcrumb-one" aria-label="breadcrumb">
+                                    <ol class="breadcrumb">
+                                        <li class="breadcrumb-item"><a href="javascript:void(0);">View Cow</a></li>
+                                       
+                                    </ol>
+                                </nav>
+                            </div>
+                        </li>
+                    </ul>
+      
+                </header>
+            </div>
+            <!--  Navbar Ends / Breadcrumb Area  -->
+            <!-- start of main body -->
+            <div class="layout-px-spacing">
+
+
+       <div class="">
+                    <div class="">
+                        <div class="row">
+                            <div class="col-xl-12 col-lg-12 col-md-12 col-12 ">
+                                <div class="">
+                                    <div class="row">
+                                        <div class="col-lg-6 text-center">
+                                            <div class="product-slider">
+                                                <a href="assets/img/friesiancow4.jpg" data-fancybox="cow" data-caption="FRIESIAN COW">
+                                                   
+                                                            <img src="assets/img/friesiancow4.jpg" alt="img" class="img-fluid" style="border-radius: 10px">
+                                                      
+                                                </a>
+                                                <div class=" row mt-3">
+													<div class="col-4">
+													<a href="assets/img/f.jpg" data-fancybox="cow" data-caption="FRIESIAN COW">
+                                                            <img src="assets/img/f.jpg" alt="img" class="img-fluid" />
+                                                        </a>
+													</div>
+<!--													end of col-->
+												<div class="col-4">
+													 <a href="assets/img/friesiancow1.jpg" data-fancybox="cow" data-caption="FRIESIAN COW">
+                                                            <img src="assets/img/friesiancow3.jpg" alt="img" class="img-fluid" />
+                                                        </a>
+													</div>
+<!--													end of col-->
+												<div class="col-4">
+													 <a href="assets/img/friesiancow2.jpg" data-fancybox="cow" data-caption="FRIESIAN COW">
+                                                            <img src="assets/img/friesiancow2.jpg" alt="img" class="img-fluid" />
+                                                        </a>
+													</div>
+<!--													end of col-->
+					
+									
+                                          
+                                            </div>
+                                        </div>
+										</div>
+<!--										end of col-->
+                                        <div class="col-lg-6">
+                                            <div class="cow-detailing">
+                                                <h2 class="name mt-4">Holstein Friesians</h2>
+                                                <div class="rating mb-3">
+                                                    <span class="star-rating">
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                     
+                                                    </span>
+                                                    <a href="#">(ratings)</a>
+                                                </div>                                                
+                                                <h2 >Kampala</h2>                                                
+                                                <div class="cow-description mt-4 mb-5">
+                                                    <p>Holstein Friesians are a breed of dairy cattle originating from the Dutch provinces of North Holland and Friesland, and Schleswig-Holstein in Northern Germany. They are known as the world's highest-production dairy animals.</p>
+                                                </div>
+                                  
+                                               
+                                                <hr class="mt-3 mb-3">
+                                                <ul class="info-list list-unstyled mb-0">
+                                                    <li>
+														<span class="info-list-title"><strong>Country:</strong></span>
+                                                        <span class="info-list-text text-dark"> &nbsp;Uganda</span>
+                                                    </li>
+                                                    <li>
+														<span class="info-list-title"><strong>City: </strong></span><span class="info-list-text">
+                                                            <a href="#"> &nbsp;Kampala</a>
+                                                        </span>
+                                                    </li>
+                                                    <li>
+														<span class="info-list-title"><strong>Height: </strong></span>
+                                                        <span class="info-list-text text-dark"> &nbsp;Female: 1.5 m (Adult, At Shoulder) </span>
+                                                    </li>
+													<li>
+														<span class="info-list-title"><strong>Use: </strong></span>
+                                                        <span class="info-list-text text-dark"> &nbsp;Dairy and meat (ground beef and roast beef) </span>
+                                                    </li>
+													<li>
+														<span class="info-list-title"><strong>Mass: </strong></span>
+                                                        <span class="info-list-text text-dark"> &nbsp;Female: 580 kg (Adult) </span>
+                                                    </li>
+													<li>
+														<span class="info-list-title"><strong>Scientific name: </strong></span>
+                                                        <span class="info-list-text text-dark"> &nbsp;Bos taurus taurus </span>
+                                                    </li>
+													<li>
+														<span class="info-list-title"><strong>Higher classification:</strong></span>
+                                                        <span class="info-list-text text-dark"> &nbsp;Taurine cattle</span>
+                                                    </li>
+													<li>
+														<span class="info-list-title"><strong>Rank:</strong> </span>
+															<span class="info-list-text text-dark"> &nbsp;Breed </span>
+                                                    </li>	
+                                                </ul>
+
+                                                <hr class="mt-3 mb-3">
+                                           </div>
+                                        </div>
+                                    </div>
+                <div class="counter">
+                    <div class="row">
+                        <div class="col-6 col-lg-3">
+                            <div class="count-data text-center">
+                                <h6 class="count h2" data-to="500" data-speed="1500">Female</h6>
+                                <p class="m-0px font-w-600">Gender</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-3">
+                            <div class="count-data text-center">
+                                <h6 class="count h2" data-to="150" data-speed="150">150ltrs</h6>
+                                <p class="m-0px font-w-600">Milk</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-3">
+                            <div class="count-data text-center">
+                                <h6 class="count h2" data-to="850" data-speed="850">508kg</h6>
+                                <p class="m-0px font-w-600">Weight</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-3">
+                            <div class="count-data text-center">
+                                <h6 class="count h2" data-to="190" data-speed="190">BLack&amp; White</h6>
+                                <p class="m-0px font-w-600">Colour</p>
+                            </div>
+                        </div>
+                    </div>
+				
+                </div>
+                                    <div class="col-xl-12 my-5 col-lg-12 col-md-12">
+                                        <div class="cow-breif-description">
+                                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                                <li class="nav-item">
+                                                    <a class="nav-link active" id="pills-description" data-toggle="pill" href="#pills-desc" role="tab" aria-controls="pills-desc" aria-selected="true">Description</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" id="pills-additional-info" data-toggle="pill" href="#pills-add-info" role="tab" aria-controls="pills-add-info" aria-selected="false">Pedigree chart</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" id="pills-review" data-toggle="pill" href="#pills-rev" role="tab" aria-controls="pills-rev" aria-selected="false">Reviews (2)</a>
+                                                </li>
+                                            </ul>
+                                            <div class="tab-content" id="pills-tabContent">
+                                                <div class="tab-pane fade show active" id="pills-desc" role="tabpanel" aria-labelledby="pills-description">
+                                                    <h3 class="mb-4 mt-5">Description:</h3>
+                                                    <p>
+                                                       Holstein Friesians are a breed of dairy cattle originating from the Dutch provinces of North Holland and Friesland, and Schleswig-Holstein in Northern Germany. They are known as the world's highest-production dairy animals.
+                                                    </p>
+                                                </div>
+                                                <div class="tab-pane fade" id="pills-add-info" role="tabpanel" aria-labelledby="pills-additional-info">
+                                                    <h3 class="mb-4 mt-5">Pedigree chart:</h3>
+                                                    <p>
+                                                       Holstein Friesians are a breed of dairy cattle originating from the Dutch provinces of North Holland and Friesland, and Schleswig-Holstein in Northern Germany. They are known as the world's highest-production dairy animals.
+                                                    </p>
+													      <div class="row">
+                                                           
+															<div class="col-md-10 mx-auto my-3">
+																<img src="assets/img/ped1.jpg" class="img-fluid" style="border-radius: 10px;">
+															</div>
+<!--															end of col-->
+                                                        </div>
+                                                </div>
+                                                <div class="tab-pane fade" id="pills-rev" role="tabpanel" aria-labelledby="pills-review">
+                                                    <h3 class="mb-4 mt-5">Reviews:</h3>
+                                                  <div class="farmer-review-option">
+           <div class="co-item">
+            <div class="profile-pic">
+                 <img src="assets/img/kong1.png" alt="" class="img-fluid">
+                 </div>
+                <div class="profile-text">
+                <div class="pd-rating text-warning">
+                 <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                 <i class="fa fa-star"></i>
+                 <i class="fa fa-star-half-alt"></i>
+            <i class="fa fa-star-half-alt"></i>
+                 <span>(4)</span>
+                                </div>
+                <h5>Evans Maina<span>Jan 12th 2020</span></h5>
+                <div class="at-reply">Wow this cow looks healthy and productive. I am a farmer at Kenya, how can i Make my Cow Healthy like this.</div>
+                     </div>
+                          </div>
+        </div>
+<!--      end of comment-->
+       <div class="farmer-review-option">
+           <div class="co-item">
+            <div class="profile-pic">
+                 <img src="assets/img/crochet-hairstyles-1579293147.png" alt="" class="img-fluid">
+                 </div>
+                <div class="profile-text">
+                <div class="pd-rating text-warning">
+                 <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                 <i class="fa fa-star-half-alt"></i>
+            <i class="fa fa-star-half-alt"></i>
+                 <span>(3)</span>
+                                </div>
+                <h5>Mrs Maina<span>Jan 12th 2020</span></h5>
+                <div class="at-reply">Wow this cow looks healthy and productive. I am a farmer at Kenya, how can i Make my Cow Healthy like this.</div>
+                     </div>
+                          </div>
+        </div>
+<!--      end of comment-->
+      
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                           </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                         
+                
+<!--				end of stats row-->
+				 
+
+           </div>
+            <!-- End of main body -->
+          
+            <!--  start of footer -->
+            <div class="footer-wrapper">
+                <div class="footer-section f-section-1">
+                    <p class="">Copyright © 2021. AGRIC SOLUTIONS, All rights reserved.</p>
+                </div>
+              
+            </div>
+<!--           end of footer-->
+            <div class="scroll-top-arrow" style="display: none;">
+                <i class="fas fa-angle-up"></i>
+            </div>
+            <!-- end of scrooll top -->
+        </div>
+        <!--  end of content area  -->
+
+    </div>
+<!--  end of elements-->
+    <script src="assets/js/jquery-3.1.1.min.js"></script>
+	<script src="assets/js/jquery.fancybox.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    
+    <script src="assets/js/all.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script>
+        $(document).ready(function() {
+            App.init();
+        });
+    </script>
+  
+</body>
+
+</html>
