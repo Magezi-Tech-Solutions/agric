@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+				<meta charset="utf-8">
+				<meta name="viewport" content="width=device-width, initial-scale=1.0">
+				<title>::AGRIC STORE::</title>
+	           <link rel="icon" href="img/store/logo.jpg" type="image/png">
+	           <link rel="stylesheet" href="css/bootstrap.min.css">
+	           <link rel="stylesheet" href="css/swiper.min.css">
+	           <link rel="stylesheet" href="css/prod.css">
+	           <link rel="stylesheet" href="store.css">
+</head>
+
+<body>
+			 	<div class='thetop'></div>
+			    <header>
+            <nav class="navbar navbar-expand-lg">
+               <a class="navbar-brand logo" href="index.html"><img src="img/store/logo.jpg" class="img-fluid" alt=""></a>
+               <button class="navbar-toggler burger-nav" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <i class="fas fa-bars"></i> </button>
+               <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                 
+					
+					 <li class="nav-item"> <a class="nav-link" href="dashboard.html">Dashboard</a> </li>
+                     <li class="nav-item"> <a class="nav-link" href="store.html#stores" onclick="$('#stores').animatescroll({scrollSpeed:2000,easing:'easeInOutBack'});">Stores</a> </li>
+					  <li class="nav-item"> <a class="nav-link" href="index.html#news" onclick="$('#news').animatescroll({scrollSpeed:2000,easing:'easeInOutBack'});">News</a> </li>
+					  <li class="nav-item"> <a class="nav-link" href="#">About AgriPools</a> </li>
+					  <li class="nav-item"> <a class="nav-link" href="#contact" onclick="$('#contact').animatescroll({scrollSpeed:2000,easing:'easeInOutBack'});">Contact</a> </li>
+             
+                  </ul>
+                  <ul class="topnav-right">
+               
+                     <li class="social-handles"> 
+					       <div class="d-flex justify-content-end ">
+                 
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                
+                
+                </div>
+					  
+					  </li>
+                     
+                     <li class="login-reg"> <a href="cart.html"><span><i class="fas fa-shopping-cart"></i></span><span class="cart-items" id="cart-items"> 0</span></a>   </li>
+                  </ul>
+               </div>
+            </nav>
+         </header>
+
+         <!--Header End--> 
+<!--	banner-->
+	  <div class="banner d-flex justify-content-center align-items-center" style="background: linear-gradient(rgba(0,255,0,0.1),rgba(0,0,0,0.8)),url(img/store/pages-banner.png); background-size: cover; background-position: center">
+        
+        <div class="text-center">
+            <h1 class="banner-head"><strong>~ PRODUCT</strong></h1>
+           
+            
+            </div>
+        
+        </div> 
+<!--	banner-->
+ 
+<!--    Main content-->
+	<div class="container-fluid">
+<div class="row">
+		<div class="col-md-5 mx-auto my-3">
+		<img src="img/store/products/Dairy%20Farming%20India.jpg" class="img-fluid mt-4">
+<!--			thumbnails-->
+	<div class="row">
+		<div class="col-4 ">
+		<img src="img/store/cattle.png" class="img-fluid">
+		</div>	
+<!--			end of col-->
+	<div class="col-4 ">
+		<img src="img/store/cattle1.png" class="img-fluid">
+		</div>	
+<!--			end of col-->
+<div class="col-4 ">
+		<img src="img/store/products/Dairy%20Farming%20India.jpg" class="img-fluid">
+		</div>	
+<!--			end of col-->		
+			</div>
+					
+			
+	</div>
+<!--	end of col-->
+	<div class="col-md-7 mx-auto my-3 product-detail">
+	     <div class="">
+            <h1 class="my-3" style="font-size: 1.3rem;">Holstein Friesians</h1>
+           
+              <div class="price-shipping">
+                <div class="price" id="price-preview">
+                   $ 800.00
+                </div>
+                
+              </div>
+              <div class="swatches">
+                <div class="swatch clearfix" data-option-index="0">
+                  <div class="header">Size</div>
+                  <div data-value="M" class="swatch-element plain m available">
+                    <input id="swatch-0-m" type="radio" name="option-0" value="M" checked  />
+                    <label for="swatch-0-m">
+                      M
+                  
+                    </label>
+                  </div>
+                  <div data-value="L" class="swatch-element plain l available">
+                    <input id="swatch-0-l" type="radio" name="option-0" value="L"  />
+                    <label for="swatch-0-l">
+                      L
+                    
+                    </label>
+                  </div>
+                  <div data-value="XL" class="swatch-element plain xl available">
+                    <input id="swatch-0-xl" type="radio" name="option-0" value="XL"  />
+                    <label for="swatch-0-xl">
+                      XL
+                  
+                    </label>
+                  </div>
+                  <div data-value="XXL" class="swatch-element plain xxl available">
+                    <input id="swatch-0-xxl" type="radio" name="option-0" value="XXL"  />
+                    <label for="swatch-0-xxl">
+                      XXL
+                     
+                    </label>
+                  </div>
+                </div>
+                <div class="swatch clearfix" data-option-index="1">
+                  <div class="header">Color</div>
+                  <div data-value="Blue" class="swatch-element color blue available">
+                    <div class="tooltip">Blue</div>
+                    <input quickbeam="color" id="swatch-1-blue" type="radio" name="option-1" value="Blue" checked  />
+                    <label for="swatch-1-blue" style="border-color: blue;">
+                    
+                      <span style="background-color: blue;"></span>
+                    </label>
+                  </div>
+                  <div data-value="Red" class="swatch-element color red available">
+                    <div class="tooltip">Red</div>
+                    <input quickbeam="color" id="swatch-1-red" type="radio" name="option-1" value="Red"  />
+                    <label for="swatch-1-red" style="border-color: red;">
+                    
+                      <span style="background-color: red;"></span>
+                    </label>
+                  </div>
+                  <div data-value="Yellow" class="swatch-element color yellow available">
+                    <div class="tooltip">Yellow</div>
+                    <input quickbeam="color" id="swatch-1-yellow" type="radio" name="option-1" value="Yellow"  />
+                    <label for="swatch-1-yellow" style="border-color: yellow;">
+                     
+                      <span style="background-color: yellow;"></span>
+                    </label>
+                  </div>
+                </div>
+                <div class="guide">
+                  <a>Size guide</a>
+                </div>
+              </div>
+              <!-- <form method="post" enctype="multipart/form-data" id="AddToCartForm"> -->
+              <form id="AddToCartForm">
+
+                <div class="btn-and-quantity-wrap">
+                  <div class="btn-and-quantity  ">
+                    <div class="spinner mt-3 mb-5">
+                      <span class="btn minus"></span>
+                      <span class="q">Qty. 1 </span>
+                      <span class="btn plus"></span>
+                    </div>
+                    <div id="AddToCart" class="my-3 mx-auto" >
+                      <span id="AddToCartText">Add to Cart</span>
+                    </div>
+                  </div>
+                </div>
+              </form>
+              <div class="tabs">
+                <div class="tab-labels">
+                  <span data-id="1" class="active">Description</span>
+                </div>
+                <div class="tab-slides">
+                  <div id="tab-slide-1" itemprop="description"  class="slide active">
+                    Holstein Friesians are a breed of dairy cattle originating from the Dutch provinces of North Holland and Friesland, and Schleswig-Holstein in Northern Germany. They are known as the world's highest-production dairy animals.
+                  </div>
+               </div>
+              </div>
+              
+			 
+          </div>
+        
+	
+	</div>
+<!--	end of col-->
+		
+		</div>
+	
+	</div>
+	
+	
+	
+	<hr style="border-top: 3px solid #333;width:60%">
+		<div class="text-center">
+		<h1>RELATED PRODUCTS</h1>
+		</div>
+
+            <hr style="border-top: 3px solid #333;width:40%" class="ml-auto"> 
+		<div class="container-fluid">
+	<div class="row">
+			<div class="col-md-3 mx-auto my-4">
+			<div class="wrappery">
+  <div class="containery">
+    <div class="top" style="background: url(img/store/products/cow-1.png) no-repeat center center;background-size: 100%;"></div>
+    <div class="bottom">
+      <div class="left">
+        <div class="details">
+          <h4 style="font-family: monospace;font-size: 1.3rem;">Brown cow</h4>
+          <p class="lead">$ 1200</p>
+        </div>
+        <div class="buy text-center" style="font-size: .8rem;"><span style="font-size: 2.3rem;" class="shopping-btn"><i class="fas fa-shopping-cart"></i></span> <br>Add to cart</div>
+      </div>
+      <div class="right">
+        <div class="done"><i class="fas fa-check"></i> done</div>
+        <div class="details">
+          <h4 style="font-family: monospace; font-size: 1.3rem;">Brown cow</h4>
+          <p>Added to your cart</p>
+        </div>
+        <div class="remove text-center" style="font-size: .8rem;"><span style="font-size: 2.3rem;" class="clear-shopp"><i class="fas fa-trash-alt"></i></span><br> clear</div>
+      </div>
+    </div>
+  </div>
+  <div class="inside">
+    <div class="icon"><i class="fas fa-bars"></i></div>
+    <div class="contents text-white">
+	 <h3 style="font-family: monospace;font-size: 1.3rem;">Brown cow</h3>	
+      <p class="lead">Holstein Friesians are a breed of dairy cattle originating from the Dutch provinces of North Holland and Friesland, and Schleswig-Holstein in Northern Germany. They are known as the world's highest-production dairy animals.</p>
+		<hr style="border-top: 3px solid #333;width:60%">
+             <a href="product.html" style="text-decoration: none;"><button class="btn btn-primary btn-block mb-2 mt-3 btn-lg mb-4 text-center mx-auto" style="box-shadow: 12px 10px 12px rgba(0,0,0,0.3);">View Details &nbsp; <i class="fas fa-arrow-right"></i></button></a> 
+            <hr style="border-top: 3px solid #333;width:40%" class="ml-auto">  
+    </div>
+  </div>
+</div>
+			</div>
+<!--			end of col-->
+						
+						
+			<div class="col-md-3 mx-auto my-4">
+			<div class="wrappery">
+  <div class="containery">
+    <div class="top" style="background: url(img/store/products/cow-2.png) no-repeat center center;background-size: 100%;"></div>
+    <div class="bottom">
+      <div class="left">
+        <div class="details">
+          <h4 style="font-family: monospace;font-size: 1.3rem;">Dairy Brown </h4>
+          <p class="lead">$ 1800</p>
+        </div>
+        <div class="buy text-center" style="font-size: .8rem;"><span style="font-size: 2.3rem;" class="shopping-btn"><i class="fas fa-shopping-cart"></i></span> <br>Add to cart</div>
+      </div>
+      <div class="right">
+        <div class="done"><i class="fas fa-check"></i> done</div>
+        <div class="details">
+          <h4 style="font-family: monospace;font-size: 1.3rem;">Dairy Brown</h4>
+          <p>Added to your cart</p>
+        </div>
+        <div class="remove text-center" style="font-size: .8rem;"><span style="font-size: 2.3rem;" class="clear-shopp"><i class="fas fa-trash-alt"></i></span><br> clear</div>
+      </div>
+    </div>
+  </div>
+  <div class="inside">
+    <div class="icon"><i class="fas fa-bars"></i></div>
+    <div class="contents text-white">
+	 <h3 style="font-family: monospace;font-size: 1.3rem;">Dairy Brown</h3>	
+      <p class="lead">Holstein Friesians are a breed of dairy cattle originating from the Dutch provinces of North Holland and Friesland, and Schleswig-Holstein in Northern Germany. They are known as the world's highest-production dairy animals.</p>
+		<hr style="border-top: 3px solid #333;width:60%">
+             <a href="product.html" style="text-decoration: none;"><button class="btn btn-primary btn-block mb-2 mt-3 btn-lg mb-4 text-center mx-auto" style="box-shadow: 12px 10px 12px rgba(0,0,0,0.3);">View Details &nbsp; <i class="fas fa-arrow-right"></i></button></a> 
+            <hr style="border-top: 3px solid #333;width:40%" class="ml-auto">  
+    </div>
+  </div>
+</div>
+			</div>
+<!--			end of col-->
+						
+						
+			<div class="col-md-3 mx-auto my-4">
+			<div class="wrappery">
+  <div class="containery">
+    <div class="top" style="background: url(img/store/products/cow-4.jpg) no-repeat center center;background-size: 100%;"></div>
+    <div class="bottom">
+      <div class="left">
+        <div class="details">
+          <h4 style="font-family: monospace;font-size: 1.3rem;">Bull Cow </h4>
+          <p class="lead">$ 1499</p>
+        </div>
+        <div class="buy text-center" style="font-size: .8rem;"><span style="font-size: 2.3rem;" class="shopping-btn"><i class="fas fa-shopping-cart"></i></span> <br>Add to cart</div>
+      </div>
+      <div class="right">
+        <div class="done"><i class="fas fa-check"></i> done</div>
+        <div class="details">
+          <h4 style="font-family: monospace;font-size: 1.3rem;">Bull Cow</h4>
+          <p>Added to your cart</p>
+        </div>
+        <div class="remove text-center" style="font-size: .8rem;"><span style="font-size: 2.3rem;" class="clear-shopp"><i class="fas fa-trash-alt"></i></span><br> clear</div>
+      </div>
+    </div>
+  </div>
+  <div class="inside">
+    <div class="icon"><i class="fas fa-bars"></i></div>
+    <div class="contents text-white">
+	 <h3 style="font-family: monospace;font-size: 1.3rem;">Bull Cow</h3>	
+      <p class="lead">Holstein Friesians are a breed of dairy cattle originating from the Dutch provinces of North Holland and Friesland, and Schleswig-Holstein in Northern Germany. They are known as the world's highest-production dairy animals.</p>
+		<hr style="border-top: 3px solid #333;width:60%">
+             <a href="product.html" style="text-decoration: none;"><button class="btn btn-primary btn-block mb-2 mt-3 btn-lg mb-4 text-center mx-auto" style="box-shadow: 12px 10px 12px rgba(0,0,0,0.3);">View Details &nbsp; <i class="fas fa-arrow-right"></i></button></a> 
+            <hr style="border-top: 3px solid #333;width:40%" class="ml-auto">  
+    </div>
+  </div>
+</div>
+			</div>
+<!--			end of col-->
+		
+<!--		end of col-->
+
+		
+			</div>
+		</div>
+            <hr style="border-top: 3px solid #333;width:40%" class="ml-auto">  	
+		
+		
+
+<!--    FOOTER-->
+		 
+ <footer class="p-2 mt-4" >
+     <div class="container-fluid">
+     <div class="row text-center">
+         <div class="col-10 mx-auto my-2 col-sm-6 col-md-4">
+     
+     <img class="img-fluid footer-logo" src="img/store/logo.jpg">
+     
+     </div>
+<!--         end of col-->
+           <div class="col-10 mx-auto my-2 col-sm-6 col-md-4">
+    <p style="color:#d5d5d5;">&copy; Copyright.<script>document.write(new Date().getFullYear());</script> Agric Solutions All rights reserved </p>
+     </div>
+<!--         end of col-->
+           <div class="col-10 mx-auto my-2 col-sm-6 col-md-4">
+     
+     <h6> <span style="color: yellow"><strong>Terms of Services</strong></span></h6>
+     
+     </div>
+<!--         end of col--> 
+         
+         </div>
+     
+     </div>
+  
+    
+    
+    </footer>   
+    
+    
+    
+<!--    FOOTER-->
+ 	 
+		 
+	<div class='scrolltop'>
+    <div class='scroll icon'><i class="fa fa-4x fa-angle-up"></i></div>
+</div>	 
+
+	
+	
+<!--	end of elements-->
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="js/all.js"></script>
+	<script src="js/TweenMax.min.js"></script>
+	<script src="js/gsap.min.js"></script>
+	<script src="js/swiper.min.js"></script>
+	<script src="store.js"></script>
+	    <script>
+
+     /*HOME PRIMARY*/
+            TweenMax.to(".home__primary", 2, {
+                width: "100%",
+                ease: Expo.easeInOut
+            })
+            gsap.from('.home__title', {opacity: 0, duration: 2, delay: 1.5, y: 100})
+            gsap.from('.home__img img', {opacity: 0, duration: 2, delay:1.5, y: -100})
+
+            /*HOME SECONDARY*/
+            TweenMax.to(".home__secondary", 2.5, {
+                width: "100%",
+                ease: Expo.easeInOut
+            })
+            gsap.from('.home__scroll', {opacity: 0, duration: 3, x: -100})
+            gsap.from('.home__year', {opacity: -1, duration: 1.5, delay: 1.5, x: 100});
+			
+			//
+					
+//		add/cart
+const buyBtn= document.querySelectorAll('.shopping-btn');
+	buyBtn.forEach(function(btn){
+		btn.addEventListener('click',function(e){
+			const ShopCol = e.target.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement;
+			const bottomShop= ShopCol.querySelector('.bottom');
+			bottomShop.classList.add('clicked');
+		})
+	})
+//		remove/cart
+const clearBtn= document.querySelectorAll('.clear-shopp');
+	clearBtn.forEach(function(btn){
+		btn.addEventListener('click',function(e){
+			const ShopCol = e.target.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement;
+			const bottomShop= ShopCol.querySelector('.bottom');
+			bottomShop.classList.remove('clicked');
+		})
+	})		
+		
+    </script>
+</body>
+</html>
